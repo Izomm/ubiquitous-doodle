@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet"/>
+    <!-- <link href="/css/style.css" rel="stylesheet"/> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>Document</title>
 </head>
 <body>
-   <section>
-            <section>
-                <img src="" alt="">
+   <section class="container flex justify-left bg-white items-center overflow-auto rounded-xl p-24">
+           <section class="max-w-[40%]  ">
 
-            </section>
+                <img class="rounded-xl " src="/media/images/435fe7242e1bb811729270b206b8e5fb.jpg" alt="">
 
 
-            <section>
-                <div>
-                    <h2>Get Started Now</h2>
-                    <p>Please log into your account to continue</p>
+           </section>
+
+            
+
+
+            <section class="max-w-[40%] ms-24">
+                <div class="my-6">
+                    <h2 class="text-4xl">Get Started Now</h2>
+                    <p class="text-sm opacity-40">Please log into your account to continue</p>
                 </div>
 
-                <form action="">
+                <form class="flex flex-col" action="">
 
-                            <div>
-                        <label for="name">Name</label>
-                        <input type="text" name="" id="name" placeholder="Enter Your name Here">
+                        <div class="my-4 flex flex-col">
+                            <label for="name" class="font-medium pb-2">Name</label>
+                            <input class="border-1 rounded-md p-1 w-md" type="text" name="" id="name" placeholder="Enter Your name Here">
                         </div>
 
-                        <div>
-                        <label for="name">Email address</label>
-                        <input type="text" name="" id="name" placeholder="Enter Your Email Here">
+                        <div class="flex flex-col ">
+                            <label for="name" class="font-medium pb-2">Email address</label>
+                            <input class="border-1 rounded-md p-1 w-md" type="text" name="" id="name" placeholder="Enter Your Email Here">
                         </div>
 
-                        <div>
-                        <label for="name">password</label>
-                        <input type="text" name="" id="name" placeholder="Enter Your Password Here">
+                        <div class="flex flex-col">
+                            <div class="flex justify-between pt-4 pb-2">
+                                <label for="name" class="font-medium ">Password</label>
+                                <a class="text-blue-800 text-sm font-medium" href="">Forgot Password?</a>
+
+                            </div>
+                            
+                            <input class="border-1 rounded-md p-1 w-md"  type="text" name="" id="name" placeholder="Enter Your Password Here">
                         </div>
 
-                        <div>
-                        
-                        <input type="checkbox" name="" id="name" placeholder="Enter Your name Here">
-                        <label for="name">I agree to the Terms & nPolicy</label>
+                        <div class="flex py-4 justify pb-10">
+                            
+                            <input type="checkbox" name="" id="name" placeholder="Enter Your name Here">
+                            <label class="ps-4" for="name">I agree to the Terms & Policy</label>
                         </div>
 
-                        <button type="submit">Login</button>
+                        <button class="bg-blue-700 rounded-md text-white py-1" type="submit">Login</button>
 
-                        <div>
-                            <p>have an account? <a href="">Signup</a></p>
+                        <div class="flex justify-center py-4">
+                            <p >have an account? <a class="text-blue-900 font-semibold" href="">Signup</a></p>
                         </div>
 
                 </form>
 
 
 
-                <div>
+                <div class="flex justify-center">
                     <p>Or</p>
                 </div>
 
-                <div>
-                    <a href="">
-                        <div>
-                            <img src="" alt="">
-                            <p>Login with Google</p>
+                <div class="flex justify-between pt-4 ">
+                    <a href="" class="border-1 rounded-md p-1 w-md items-center flex mx-2 py-2 px-4">
+                        <div class="flex items-center">
+                            <img class="w-[2rem]" src="/media/logo/google.png" alt="">
+                            <p class="ps-4">Login with <span class="font-semibold"> Google</span> </p>
                         </div>
                     </a>
-
-                    <a href="">
-                        <div>
-                            <img src="" alt="">
-                            <p>Login with Apple</p>
+ 
+                    <a href="" class="border-1 rounded-md p-1 w-md items-center flex  mx-2 py-2 px-4">
+                        <div class="flex items-center" >
+                            <img class="w-[2rem]" src="/media/logo/apple-logo.png" alt="">
+                            <p class="ps-4">Login with <span class="font-semibold">Apple</span></p>
                         </div>
                     </a>
                 </div>
